@@ -275,8 +275,8 @@ img {
 /* ============== Section 2 ================= */
 
 .advantage {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -293,40 +293,32 @@ img {
 }
 
 .advantage-menu {
-  display: flex;
   text-decoration: none;
   list-style: none;
-  width: 1128px;
-  height: 104px;
+  max-width: 320px;
   flex-shrink: 0;
-  gap: 24px;
-  padding-bottom: 120px;
+  padding-bottom: 96px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 72px;
 }
 .advantage-menu-list {
-  width: calc((100% - 72px) / 4);
-  width: 264px;
-  height: 72px;
+  justify-content: center;
 }
 
 .box-icon {
-  display: flex;
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
-  background: var(--CLOUD, #f4f4fd);
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
+  display: none;
 }
 .advantage-menu-title {
   color: #2e2f42;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  align-self: stretch;
+  text-align: center;
 }
 .advantage-menu-item {
   color: #434455;
@@ -336,7 +328,51 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-*/
+
+@media (min-width: 768px) {
+  .advantage-menu-title {
+    text-align: start;
+  }
+
+  .advantage-menu {
+  }
+
+  .advantage-menu-list {
+  }
+}
+@media (min-width: 1158px) {
+  .advantage {
+  }
+
+  .advantage-menu {
+    width: 264px;
+    height: 104px;
+    flex-shrink: 0;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .advantage-menu-list {
+    width: calc((100% - 72px) / 4);
+    width: 264px;
+    height: 72px;
+  }
+
+  .box-icon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+    background: var(--CLOUD, #f4f4fd);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .advantage-menu-title {
+    font-size: 36px;
+  }
+}
 
 /* ============== Section 3 ================= */
 

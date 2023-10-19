@@ -187,7 +187,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(..//images/people-office.jpg);
+    url(..//images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -271,6 +271,7 @@ img {
 
   .title-container {
     padding: 188px 472px 188px 472px;
+    margin: 0 auto;
   }
 }
 
@@ -286,7 +287,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office@2x.jpg);
+      url(../images/people-office-mob@2x.jpg);
   }
 }
 
@@ -318,15 +319,13 @@ img {
 .advantage-menu {
   text-decoration: none;
   list-style: none;
-  max-width: 288px;
-  flex-shrink: 0;
+
   padding-bottom: 96px;
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
   gap: 72px;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .advantage-menu-list {
@@ -363,8 +362,8 @@ img {
   }
 
   .advantage-menu {
-    max-width: 736px;
     flex-wrap: wrap;
+    gap: 72px 24px;
   }
 
   .advantage-menu-list {
@@ -382,6 +381,7 @@ img {
     flex-shrink: 0;
     gap: 24px;
     flex-wrap: nowrap;
+    margin: 0 auto;
   }
   .advantage-menu-list {
     width: calc((100% - 72px) / 4);
@@ -452,7 +452,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  max-width: 1440px;
+  max-width: 552px;
   margin: 0 auto;
 }
 

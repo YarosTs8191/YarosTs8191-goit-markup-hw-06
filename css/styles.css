@@ -1076,6 +1076,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1158px) {

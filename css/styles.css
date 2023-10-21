@@ -894,13 +894,14 @@ img {
   padding-top: 101.5px;
   padding-bottom: 100px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer-logo-cont {
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 
 .footer-span {
@@ -922,8 +923,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
+  text-align: center;
 }
 .text-footer {
   color: #f4f4fd;
@@ -933,8 +937,10 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 288px; /* max-width: 264px; */
-  justify-content: center;
+  max-width: 288px;
+  /* max-width: 264px; */
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 .soc-med-text {
@@ -944,20 +950,35 @@ img {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .soc-text-container {
-  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .footer-menu {
   list-style: none;
   display: flex;
   gap: 16px;
+  margin-bottom: 72px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-network-item {
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-network-link {
@@ -980,6 +1001,12 @@ img {
   background-color: #31d0aa;
 }
 
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1158px) {
+}
+
 /* ================ Footer form ============= */
 
 .footer-subscribe {
@@ -991,11 +1018,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-form {
   display: flex;
   gap: 24px;
   flex-direction: column;
+  align-items: center;
 }
 .footer-form-input {
   width: 264px;
@@ -1029,7 +1058,7 @@ img {
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   color: var(--WHITE, #fff);
-  min-width: 165px;
+  max-width: 165px;
   height: 40px;
   font-weight: 500;
   line-height: 1.5;

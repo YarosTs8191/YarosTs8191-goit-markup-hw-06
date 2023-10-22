@@ -1117,6 +1117,10 @@ img {
 
   .soc-text-container {
     margin-left: 0;
+    margin-bottom: 0px;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
   }
 
   .soc-med-text {

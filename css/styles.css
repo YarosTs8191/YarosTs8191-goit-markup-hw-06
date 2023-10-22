@@ -1073,8 +1073,9 @@ img {
 
 @media (min-width: 768px) {
   .container .footer-container {
-    max-width: 584px;
-    justify-content: left;
+    max-width: 552px;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-container {
@@ -1118,14 +1119,14 @@ img {
   .soc-text-container {
     margin-left: 0;
     margin-bottom: 0px;
-    text-align: left;
     justify-content: left;
     align-items: left;
+    text-align: left;
   }
 
   .soc-med-text {
     text-align: left;
-    justify-content: start;
+    justify-content: left;
   }
 }
 

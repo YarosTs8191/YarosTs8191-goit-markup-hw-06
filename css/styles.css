@@ -1079,10 +1079,8 @@ img {
 }
 
 @media (min-width: 768px) {
-  .container .footer-container {
+  .container.footer-container {
     max-width: 552px;
-    /* justify-content: center;
-    align-items: center; */
   }
 
   .footer-container {
@@ -1140,7 +1138,7 @@ img {
 }
 
 @media (min-width: 1158px) {
-  .container .footer-container {
+  .container.footer-container {
     max-width: 1158px;
     justify-content: left;
     flex-wrap: nowrap;

@@ -49,6 +49,10 @@ img {
 }
 
 @media (min-width: 1158px) {
+  .header {
+    padding: 0;
+  }
+
   .container {
     max-width: 1440px;
   }
@@ -103,11 +107,11 @@ img {
 }
 
 .header-menu-item {
-  padding: 24px 0;
   position: relative;
 }
 
 .header-menu-link {
+  padding: 24px 0;
   text-decoration: none;
   color: #2e2f42;
   font-size: 16px;
@@ -120,7 +124,6 @@ img {
 }
 
 .header-menu-item:first-child .header-menu-link {
-  color: #404bbf;
   position: relative;
 }
 
@@ -138,10 +141,12 @@ img {
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  background: #404bbf;
   color: #404bbf;
 }
 
+.header-menu-link:active {
+  color: #404bbf;
+}
 .address {
   font-style: normal;
   display: none; /* display: flex; */
@@ -231,8 +236,8 @@ img {
   overflow: auto;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 320px;
-  height: 640px;
+  width: 100%;
+  height: 100%;
 }
 
 .mob-menu.is-open {
@@ -354,6 +359,15 @@ img {
   background-color: #31d0aa;
 }
 
+.menu-open-btn {
+  border-color: #fff;
+  background: transparent;
+  box-shadow: none;
+}
+
+.open-btn-icon {
+  background: transparent;
+}
 /* ===================== Section 1 =====================*/
 
 .title {
@@ -384,7 +398,6 @@ img {
 }
 
 .title-container {
-  padding: 72px 16px 72px 16px;
 }
 
 .section-title {
@@ -457,7 +470,6 @@ img {
   }
 
   .title-container {
-    padding: 112px 136px 112px 136px;
   }
   .section-title {
     font-size: 56px;
@@ -493,7 +505,6 @@ img {
   }
 
   .title-container {
-    padding: 188px 472px 188px 472px;
     margin: 0 auto;
   }
 }
@@ -531,8 +542,6 @@ img {
 .advantage-menu {
   text-decoration: none;
   list-style: none;
-
-  padding-bottom: 96px;
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
@@ -550,7 +559,6 @@ img {
 }
 .advantage-menu-title {
   color: #2e2f42;
-  font-family: Roboto;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
@@ -585,25 +593,19 @@ img {
 }
 @media (min-width: 1158px) {
   .advantage-container {
-    padding-bottom: 120px;
+    max-width: 1158px;
   }
   .advantage-menu {
-    width: 264px;
-    height: 104px;
-    flex-shrink: 0;
     gap: 24px;
     flex-wrap: nowrap;
     margin: 0 auto;
   }
   .advantage-menu-list {
     width: calc((100% - 72px) / 4);
-    width: 264px;
-    height: 72px;
   }
 
   .box-icon {
     display: flex;
-    width: 264px;
     height: 112px;
     border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE, #8e8f99);
@@ -625,8 +627,6 @@ img {
 }
 
 .team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team {
@@ -668,16 +668,22 @@ img {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .team-list {
+    flex-basis: calc((100% - 24px) / 2);
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 1158px) {
   .team-menu {
-    max-width: 1160px;
-    flex-wrap: nowrap;
+    max-width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
   }
   .team-list {
-    padding-bottom: 32px;
-    width: calc((100%-32 * 3) / 4);
+    width: calc((100% - 24px * 3) / 4);
   }
 }
 
@@ -687,16 +693,10 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  padding-top: 0;
   padding-bottom: 32px;
   margin: 0 auto;
   max-width: 264px;
-}
-
-@media (min-width: 768px) {
-  .team-list {
-    flex-basis: calc((100%-24) / 2);
-    max-width: 100%;
-  }
 }
 
 .team-item {
@@ -760,7 +760,7 @@ img {
 /* ============== Section 4 ================= */
 
 .portfolio-subcontainer {
-  padding: 0px 16px;
+  padding: 32px 16px;
   border: 0px solid #e7e9fc;
   border-top: none;
 }
@@ -794,9 +794,7 @@ img {
 .portfolio-list {
   margin: 0 auto;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  padding-bottom: 32px;
   width: 288px;
-  height: 420px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -809,7 +807,6 @@ img {
 .covertext-hiden {
   position: relative;
   overflow: hidden;
-  padding: 40px 32px;
 }
 
 .portfolio-list:hover .portfolio-cover-text {
@@ -819,7 +816,6 @@ img {
 .portfolio-img {
   margin: 0 auto;
   background: lightgray;
-  margin-bottom: 32px;
 }
 
 .portfolio-cover-text {
@@ -867,7 +863,6 @@ img {
 
   .portfolio-list {
     width: calc((100% - 24px) / 2);
-    width: 356px;
   }
 }
 
@@ -882,7 +877,7 @@ img {
   }
 
   .portfolio-list {
-    width: calc((100%-32 * 4) / 6);
+    width: calc((100% - 24px * 2) / 3);
   }
 
   .portfolio-cover-text {

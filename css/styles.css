@@ -360,13 +360,15 @@ img {
 }
 
 .menu-open-btn {
-  border-color: #fff;
   background: transparent;
-  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0;
 }
 
 .open-btn-icon {
-  background: transparent;
 }
 /* ===================== Section 1 =====================*/
 
@@ -712,7 +714,9 @@ img {
 }
 .team-img {
   background: lightgray;
-  margin-bottom: 32px;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .network-list {

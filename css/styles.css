@@ -9,8 +9,7 @@ body {
 
 .header {
   background: #fff;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 17.5px 16px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -35,6 +34,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   max-width: 320px;
@@ -46,13 +47,13 @@ img {
   .container {
     max-width: 768px;
   }
-}
 
-@media (min-width: 1158px) {
   .header {
     padding: 0;
   }
+}
 
+@media (min-width: 1158px) {
   .container {
     max-width: 1440px;
   }
@@ -372,7 +373,7 @@ img {
 }
 /* ===================== Section 1 =====================*/
 
-.title {
+.hero {
   padding: 72px 0;
   background: #2e2f42;
   background-image: linear-gradient(
@@ -389,7 +390,7 @@ img {
 }
 
 @medin (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .title {
+  .hero {
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -399,10 +400,10 @@ img {
   }
 }
 
-.title-container {
+.hero-container {
 }
 
-.section-title {
+.section-hero {
   color: #fff;
   font-size: 36px;
   line-height: 1.111;
@@ -442,11 +443,11 @@ img {
 }
 
 @media (min-width: 768px) {
-  .section-title {
+  .section-hero {
     font-size: 56px;
   }
 
-  .title {
+  .hero {
     padding: 112px 0;
     background-image: linear-gradient(
         to bottom,
@@ -457,7 +458,7 @@ img {
   }
 
   @medin (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .title {
+    .hero {
       background-image: linear-gradient(
           to bottom,
           rgba(46, 47, 66, 0.7),
@@ -471,9 +472,9 @@ img {
     margin-top: 36px;
   }
 
-  .title-container {
+  .hero-container {
   }
-  .section-title {
+  .section-hero {
     font-size: 56px;
     line-height: 1.07;
     max-width: 450px;
@@ -481,7 +482,7 @@ img {
 }
 
 @media (min-width: 1440px) {
-  .title {
+  .hero {
     padding: 188px 0;
     background-image: linear-gradient(
         to bottom,
@@ -492,7 +493,7 @@ img {
   }
 
   @medin (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .title {
+    .hero {
       background-image: linear-gradient(
           to bottom,
           rgba(46, 47, 66, 0.7),
@@ -506,7 +507,7 @@ img {
     margin-top: 48px;
   }
 
-  .title-container {
+  .hero-container {
     margin: 0 auto;
   }
 }
@@ -624,23 +625,19 @@ img {
 
 /* ============== Section 3 ================= */
 
+.team {
+  background: #f4f4fd;
+  padding: 96px 0;
+}
+
 .team-subcontainer {
   padding: 32px 0;
 }
 
-.team-container {
-}
-
-.team {
-  background: #f4f4fd;
-  padding: 120px 0;
-}
 .team-title {
   color: #2e2f42;
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -651,9 +648,7 @@ img {
 .team-subtitle {
   color: #2e2f42;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -678,6 +673,10 @@ img {
 }
 
 @media (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
+
   .team-menu {
     max-width: 100%;
     flex-wrap: wrap;
@@ -695,17 +694,13 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-top: 0;
-  padding-bottom: 32px;
   margin: 0 auto;
   max-width: 264px;
 }
 
 .team-item {
   color: #434455;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -770,18 +765,13 @@ img {
 }
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  /* padding-top: 120px;
-   padding-bottom: 120px; */
+  padding: 96px 0;
 }
 
 .portfolio-title {
   color: #2e2f42;
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -798,7 +788,7 @@ img {
 .portfolio-list {
   margin: 0 auto;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  width: 288px;
+  max-width: 288px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -831,6 +821,7 @@ img {
   display: none; /* display: flex; */
   position: absolute;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   padding: 40px 32px;
@@ -867,6 +858,7 @@ img {
 
   .portfolio-list {
     width: calc((100% - 24px) / 2);
+    max-width: 356px;
   }
 }
 
@@ -882,6 +874,7 @@ img {
 
   .portfolio-list {
     width: calc((100% - 24px * 2) / 3);
+    max-width: 360px;
   }
 
   .portfolio-cover-text {
